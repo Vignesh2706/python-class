@@ -1,0 +1,26 @@
+string , list = " " , []       
+
+class vkstore:  
+
+
+
+    def __init__(self, name,soap,coffeepowder,dhal,rice):   
+        self.name = name    
+        self.soap = 40 * soap
+        self.coffeepowder = 10 * coffeepowder
+        self.dhal = 160 * dhal
+        self.rice = 50 * rice
+        
+
+
+    def items(self):  
+      list = f'''customer Name : {self.name}\n soap : {self.soap}.0rs\n coffeepowder : {self.coffeepowder}.0rs
+ dhal : {self.dhal}.0rs\n rice : {self.rice}.0rs\n'''
+      return list
+
+    
+cust1 = vkstore('vicky', 6, 10, 2, 20)  
+cust2 = vkstore( 'ram', 3, 15, 4, 10)
+
+print(cust1.items())
+print(cust2.items())
